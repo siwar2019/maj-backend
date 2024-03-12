@@ -1,0 +1,33 @@
+{
+  "definition": {
+    "info": {
+      "title": "Maj api",
+      "version": "1.0"
+    },
+    "securityDefinitions": {
+      "apiKeyHeader": {
+        
+        "type": "apiKey",
+        "in": "header",
+        "name": "authorization"        
+      }
+   
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    }
+  ],"parameters": [
+    {
+      "name": "id",
+      "in": "query",
+      "description": "ID of the product",
+      "required": true,
+      "schema": {
+        "type": "integer"
+      }
+    }
+  ]
+  }
+}
+
